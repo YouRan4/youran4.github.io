@@ -10,7 +10,7 @@
     <meta name="keywords"  content="喜欢悠然自得, Blog, 技术博客, 个人博客, Jekyll 主题, 计算机技术,游戏,悠然,沐阳">
     <meta name="theme-color" content="#000000">
     
-    <title>About - 喜欢悠然自得 | Blog</title>
+    <title>AMD显卡 - 喜欢悠然自得 | Blog</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -22,7 +22,7 @@
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="http://p0m1se.club//about/">
+    <link rel="canonical" href="http://p0m1se.club//2025/11/12/AMD%E6%98%BE%E5%8D%A1%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -152,220 +152,183 @@
 </script>
 
 
-    <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/post-bg-rwd.jpg')">
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/post-amd.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/post-amd.jpg')
+    }
+
+    
+</style>
+<header class="intro-header" >
+    <div class="header-mask"></div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>About</h1>
-                    <!--<hr class="small">-->
-                    <span class="subheading">Hey, this is BY.</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#OBS" title="OBS">OBS</a>
+                        
+                        <a class="tag" href="/tags/#英伟达" title="英伟达">英伟达</a>
+                        
+                        <a class="tag" href="/tags/#即时回放" title="即时回放">即时回放</a>
+                        
+                    </div>
+                    <h1>AMD显卡</h1>
+                    
+                    
+                    <h2 class="subheading">AMD显卡常见问题解决方案</h2>
+                    
+                    <span class="meta">Posted by YouRan on November 12, 2025</span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-	<div class="row">
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+				<h1 id="显卡">显卡</h1>
+
+<h2 id="low帧不稳常见于9000系与7000系">LOW帧不稳（常见于9000系与7000系）</h2>
+
+<p>AMD显卡常见于Low不稳定，这里以9070xt为例，是因为AMD驱动会尝试自动boost到3.4ghz,导致反复撞功耗墙。一般手动降频降压之后好转。具体的参数需要自己摸索。 电压不需要降太多，避免驱动超时。</p>
+
+<h2 id="显卡驱动超时">显卡驱动超时</h2>
+
+<p>常见表现为游戏闪退后弹出错误报告窗口，但是系统还能识别到显卡。</p>
+
+<p><img src="/asset/image-20251112052457539.png" alt="image-20251112052457539" /></p>
+
+<p>一般由显卡驱动以及内存所导致，可以先尝试关闭MPO,<a href="/asset/mpo_disable.reg">关闭工具</a>,<a href="/asset/mpo_restore.reg">恢复工具</a>，使用Amd提供的驱动清理工具重装显卡驱动或者降级 <a href="https://www.amd.com/en/resources/support-articles/faqs/GPU-601.html">CleanUtils</a>，如尝试重装驱动或驱动降级后还是出现驱动超时，检查内存兼容性，或者关闭内存超频，或者关闭xmp。</p>
+
+<h2 id="gpu崩溃">GPU崩溃</h2>
+
+<p>表现为游戏玩到一半电脑屏幕突然卡死，音频卡在最后的1s反复播放，3秒后自动重启。多数由ULPS引起，请参考该文章关闭ULPS <a href="https://www.bilibili.com/opus/785787799123001362">BiliBili</a>或使用<a href="/asset/ulps_disable.reg">脚本</a>一键关闭，重启生效</p>
+
+<h2 id="真-掉驱动">真 掉驱动</h2>
+
+<p>表现为GPU崩溃后重启电脑显卡驱动消失，设备管理器显示设备代码31。排除独显供电线，金手指没插进意外，多次出现及时售后，引起这个情况的原因很多。</p>
+
+<h2 id="题外话">题外话</h2>
+<p>关于AMD显卡驱动超时的问题，其实不一定是显卡驱动的问题，AMD的逻辑是这个软件在独显上渲染，出现崩溃了之后他就会认为驱动异常，于是提醒你驱动超时。其实不一定是显卡的问题，可能是其他原因，包括游戏本身的异常崩溃也会弹出来。频率不高不需要太担心。</p>
+
+<h2 id="工具集合">工具集合</h2>
+<p>MPO <a href="/asset/mpo_disable.reg">禁用</a> <a href="/asset/mpo_restore.reg">恢复</a>
+ULPS <a href="/asset/ulps_disable.reg">禁用</a> <a href="https://www.bilibili.com/opus/785787799123001362">原教程</a>
+Amd显卡驱动清理地址 <a href="https://www.amd.com/en/resources/support-articles/faqs/GPU-601.html">CleanUtils</a></p>
+
+
+                <hr style="visibility: hidden;">
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2025/11/11/OBS%E5%8D%B3%E6%97%B6%E5%9B%9E%E6%94%BE%E8%AE%BE%E7%BD%AE/" data-toggle="tooltip" data-placement="top" title="OBS即时回放">
+                        Previous<br>
+                        <span>OBS即时回放</span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+
+
+                <!--Gitalk评论start  -->
+                
+                <!-- 引入Gitalk评论插件  -->
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+                <div id="gitalk-container"></div>
+                <!-- 引入一个生产md5的js，用于对id值进行处理，防止其过长 -->
+                <!-- Thank DF:https://github.com/NSDingFan/NSDingFan.github.io/issues/3#issuecomment-407496538 -->
+                <script src="/js/md5.min.js"></script>
+                <script type="text/javascript">
+                    var gitalk = new Gitalk({
+                    clientID: 'Ov23lixgKOFgViQKAHj6',
+                    clientSecret: 'ccf345e541fee7f1ed56f05e466dbd4cb6fa3bb1',
+                    repo: 'YouRan4.github.io',
+                    owner: 'YouRan4',
+                    admin: ['YouRan4'],
+                    distractionFreeMode: true,
+                    id: md5(location.pathname),
+                    });
+                    gitalk.render('gitalk-container');
+                </script>
+                
+                <!-- Gitalk end -->
+
+                
+
+            </div>  
+
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
         
 
-<!-- USE SIDEBAR -->
-    <!-- PostList Container -->
-    		<div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                postlist-container
-            ">
-    			<!-- Language Selector -->
-<!-- <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-    <option value="0" selected> 中文 Chinese </option>
-    <option value="1"> 英文 English </option>
-</select> -->
-
-<!-- Chinese Version -->
-<div class="zh post-container">
-
-    <!--copied from markdown -->
-    <blockquote><p>冰冻三尺 非一日之寒<br>
-    积土成山 非斯须之作</p></blockquote>
-
-    <p>Hey，我是<strong>YouRan。</strong>远离Java,幸福一生</p>
-    <p></p>
-    
-    <h5>Talks</h5>
-
-    <ul>
-        <li><a href="https://github.com">GitHub</a></li>
-        <li><a href="http://jekyll.com.cn/">jekyll</a></li>
-        <li><a href="http://huangxuan.me/">Hux</a></li> 
-        <li><a href="https://analytics.google.com/analytics">Google Analytics</a></li>
-    </ul>
-</div>
-
-<!-- English Version -->
-<!-- <div class="en post-container">
-    <blockquote><p>Yet another iOS Developer. <br>
-    Yet another Life-long Student.</p></blockquote>
-
-    <p>Hi, I am <strong>Baiying Qiu</strong>，you can call me <strong>BY</strong>. I am an iOS software engineer and currently working in Xiamen</p>
-
-    <p>This is my personal blog, through making Github Pages and Jekyll.My GitHub  👉 <a href="http://github.com/qiubaiying">Github·BY</a>.</p>
-    
-    <p>I am a sports enthusiast, I like fitness, running and boxing.</p>
-
-    <h5>Talks</h5>
-
-    <ul>
-    <li><a href="https://github.com">GitHub</a></li>
-    <li><a href="http://jekyll.com.cn/">jekyll</a></li>
-    <li><a href="https://pages.github.com/">GitHub Pages</a></li>
-    <li><a href="https://qiubaiying.github.io">BY</a></li>
-    </ul>
-</div> -->
-
-<!-- Handle Language Change -->
-<script type="text/javascript">
-    // get nodes
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    var $select = document.querySelector("select");
-
-    // bind hashchange event
-    window.addEventListener('hashchange', _render);
-
-    // handle render
-    function _render(){
-        var _hash = window.location.hash;
-        // en
-        if(_hash == "#en"){
-            $select.selectedIndex = 1;
-            $en.style.display = "block";
-            $zh.style.display = "none";
-        // zh by default
-        }else{
-            // not trigger onChange, otherwise cause a loop call.
-            $select.selectedIndex = 0;
-            $zh.style.display = "block";
-            $en.style.display = "none";
-        }
-    }
-
-    // handle select change
-    function onLanChange(index){
-        if(index == 0){
-            window.location.hash = "#zh"
-        }else{
-            window.location.hash = "#en"
-        }
-    }
-
-    // init
-    _render();
-</script>
-
-
-<!-- Gitalk 评论 start  -->
-
-<!-- Gitalk link  -->
-<div id="gitalk-container"></div>
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
-<script src="/js/md5.min.js"></script>
-<script type="text/javascript">
-    var gitalk = new Gitalk({
-        clientID: 'Ov23lixgKOFgViQKAHj6',
-        clientSecret: 'ccf345e541fee7f1ed56f05e466dbd4cb6fa3bb1',
-        repo: 'YouRan4.github.io',
-        owner: 'YouRan4',
-        admin: 'YouRan4',
-        id: location.pathname,      // Ensure uniqueness and length less than 50About
-        distractionFreeMode: 'true'  // Facebook-like distraction free mode
-    })
-    gitalk.render('gitalk-container')
-</script>
-
-<!-- Gitalk end -->
-    		</div>
     <!-- Sidebar Container -->
             <div class="
-                col-lg-3 col-lg-offset-0
-                col-md-3 col-md-offset-0
-                col-sm-12
-                col-xs-12
-                sidebar-container
-            ">
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
                 <!-- Featured Tags -->
                 
                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-                        
+        				
                             
-                                <a href="/tags/#OBS" title="OBS" rel="2">
+                				<a href="/tags/#OBS" title="OBS" rel="2">
                                     OBS
                                 </a>
                             
-                        
+        				
                             
-                                <a href="/tags/#英伟达" title="英伟达" rel="2">
+                				<a href="/tags/#英伟达" title="英伟达" rel="2">
                                     英伟达
                                 </a>
                             
-                        
+        				
                             
-                                <a href="/tags/#即时回放" title="即时回放" rel="2">
+                				<a href="/tags/#即时回放" title="即时回放" rel="2">
                                     即时回放
                                 </a>
                             
-                        
-                    </div>
+        				
+        			</div>
                 </section>
                 
 
-                <!-- Short About -->
-                <section class="visible-md visible-lg">
-                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
-                    <div class="short-about">
-                        
-                            <a href="/about">
-                                <img src="/img/about.png"/>
-                            </a>
-                        
-                        
-                            <p>Goals determine what you going to be!</p>
-                        
-                        <!-- SNS Link -->
-                        <ul class="list-inline">
-                            
-                            <!-- add jianshu add target = "_blank" to <a> by BY -->
-                            
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a target="_blank" href="https://github.com/youran4">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                            
-                        </ul>
-                        
-                            <p>✉️ hemuyang666@gmail.com</p>
-                        
-                    </div>
-                </section>
                 <!-- Friends Blog -->
                 
                 <hr>
@@ -376,10 +339,50 @@
                     
                 </ul>
                 
-    		</div>
-        
-	</div>
-</div>
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        // BY Fix:去除标题前的‘#’ issues:<https://github.com/qiubaiying/qiubaiying.github.io/issues/137>
+        // anchors.options = {
+        //   visible: 'always',
+        //   placement: 'right',
+        //   icon: '#'
+        // };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
 
 
     <!-- Footer -->
@@ -514,6 +517,50 @@
 
 
 <!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog (selector) {
+        var P = $('div.post-container'),a,n,t,l,i,c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#"+$(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+            l = $('<li class="'+n+'_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;    
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
 
 
 
