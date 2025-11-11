@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>喜欢悠然自得</title>
+    <description>I like to be leisurely and carefree</description>
+    <link>http://p0m1se.club//</link>
+    <atom:link href="http://p0m1se.club//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 11 Nov 2025 23:44:19 +0000</pubDate>
+    <lastBuildDate>Tue, 11 Nov 2025 23:44:19 +0000</lastBuildDate>
+    <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>OBS即时回放</title>
+        <description>&lt;h1 id=&quot;obs设置开机自启动即时回放&quot;&gt;Obs设置开机自启动即时回放&lt;/h1&gt;
+
+&lt;p&gt;测试啊实打实的发实打实大撒大撒&lt;/p&gt;
+</description>
+        <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+        <link>http://p0m1se.club//2025/11/11/OBS%E5%8D%B3%E6%97%B6%E5%9B%9E%E6%94%BE%E8%AE%BE%E7%BD%AE/</link>
+        <guid isPermaLink="true">http://p0m1se.club//2025/11/11/OBS%E5%8D%B3%E6%97%B6%E5%9B%9E%E6%94%BE%E8%AE%BE%E7%BD%AE/</guid>
+        
+        <category>OBS</category>
+        
+        <category>英伟达</category>
+        
+        <category>即时回放</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
