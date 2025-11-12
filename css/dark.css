@@ -19,6 +19,7 @@
   --sidebar-link: #bfbfbf;
   --sidebar-tag-border: #bfbfbf;
   --catalog-active-bg: #F5F5F5;
+  --nav-collapse-bg: #ffffff;
   --nav-collapse-shadow: none;
   --nav-fixed-bg: rgba(255,255,255,0.9);
   --nav-fixed-border: #f2f2f2;
@@ -51,6 +52,7 @@
     --sidebar-link: #b0b0b0;
     --sidebar-tag-border: #666;
     --catalog-active-bg: #262626;
+    --nav-collapse-bg: #1a1a1a;
     --nav-collapse-shadow: rgba(0,0,0,0.5) 0 5px 10px 2px;
     --nav-fixed-bg: rgba(18,18,20,0.9);
     --nav-fixed-border: #2a2a2a;
@@ -83,6 +85,7 @@ html.theme-dark {
   --sidebar-link: #b0b0b0;
   --sidebar-tag-border: #666;
   --catalog-active-bg: #262626;
+  --nav-collapse-bg: #1a1a1a;
   --nav-collapse-shadow: rgba(0,0,0,0.5) 0 5px 10px 2px;
   --nav-fixed-bg: rgba(18,18,20,0.9);
   --nav-fixed-border: #2a2a2a;
@@ -115,6 +118,7 @@ html.theme-light {
   --sidebar-tag-border: #bfbfbf;
   --catalog-active-bg: #F5F5F5;
   --nav-collapse-shadow: none;
+  --nav-collapse-bg: #ffffff;
   --nav-fixed-bg: rgba(255,255,255,0.9);
   --nav-fixed-border: #f2f2f2;
   --nav-fixed-brand: #404040;
@@ -150,3 +154,8 @@ pre { background-color: var(--pre-bg); color: var(--text); }
 .highlight { background-color: var(--highlight-bg); }
 .highlight .n, .highlight .nn { color: var(--highlight-text); }
 .highlight .gc { background-color: var(--highlight-gc-bg); }
+@media only screen and (max-width: 767px) {
+  .navbar-default .navbar-collapse {
+    background-color: var(--nav-collapse-bg);
+  }
+}
