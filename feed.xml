@@ -5,8 +5,8 @@
     <description>I like to be leisurely and carefree</description>
     <link>http://p0m1se.club//</link>
     <atom:link href="http://p0m1se.club//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 12 Nov 2025 15:02:31 +0000</pubDate>
-    <lastBuildDate>Wed, 12 Nov 2025 15:02:31 +0000</lastBuildDate>
+    <pubDate>Wed, 12 Nov 2025 16:01:50 +0000</pubDate>
+    <lastBuildDate>Wed, 12 Nov 2025 16:01:50 +0000</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -19,9 +19,9 @@
 
 &lt;h2 id=&quot;显卡驱动超时&quot;&gt;显卡驱动超时&lt;/h2&gt;
 
-&lt;p&gt;常见表现为游戏闪退后弹出错误报告窗口，但是系统还能识别到显卡。&lt;/p&gt;
+&lt;p&gt;常见表现为游戏闪退后弹出错误报告窗口，但是系统还能识别到显卡&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../asset/images/20251112193244.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/asset/images/20251112193244.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;一般由显卡驱动以及内存所导致，可以先尝试关闭MPO，使用Amd提供的驱动清理工具或DDU重装显卡驱动或者降级，尝试重装驱动或驱动降级后还是出现驱动超时，检查内存兼容性，或者关闭内存超频，或者关闭xmp。&lt;/p&gt;
 
