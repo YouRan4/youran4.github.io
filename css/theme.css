@@ -231,65 +231,65 @@ pre { background-color: var(--pre-bg); color: var(--text); }
 .listing-seperator { color: var(--link-hover); }
 
 #gitalk-container,
-#gitalk-container .gt-container { color: var(--text); }
-#gitalk-container .gt-container a { color: var(--link); }
+#gitalk-container .gt-container { color: var(--text) !important; }
+#gitalk-container .gt-container a { color: var(--link) !important; }
 #gitalk-container .gt-container a:hover,
-#gitalk-container .gt-container a:focus { color: var(--link-hover); }
+#gitalk-container .gt-container a:focus { color: var(--link-hover) !important; }
 #gitalk-container .gt-meta,
-#gitalk-container .gt-counts { color: var(--post-meta); }
-#gitalk-container .gt-comment { background-color: var(--table-bg); color: var(--text); border-color: var(--table-border); }
+#gitalk-container .gt-counts { color: var(--post-meta) !important; }
+#gitalk-container .gt-comment { background-color: var(--table-bg) !important; color: var(--text) !important; border-color: var(--table-border) !important; }
 #gitalk-container .gt-comment .gt-comment-content,
-#gitalk-container .gt-comment .gt-comment-body { color: var(--text); }
+#gitalk-container .gt-comment .gt-comment-body { color: var(--text) !important; }
 #gitalk-container .gt-header,
-#gitalk-container .gt-footer { border-color: var(--form-border); }
+#gitalk-container .gt-footer { border-color: var(--form-border) !important; }
 #gitalk-container .gt-header-textarea,
 #gitalk-container textarea,
 #gitalk-container input[type="text"],
-#gitalk-container input[type="search"] { background-color: var(--bg); color: var(--text); border-color: var(--form-border); }
+#gitalk-container input[type="search"] { background-color: var(--bg) !important; color: var(--text) !important; border-color: var(--form-border) !important; }
 #gitalk-container .gt-header-textarea::placeholder,
 #gitalk-container textarea::placeholder,
 #gitalk-container input[type="text"]::placeholder,
-#gitalk-container input[type="search"]::placeholder { color: var(--label); }
+#gitalk-container input[type="search"]::placeholder { color: var(--label) !important; }
 #gitalk-container .gt-btn,
 #gitalk-container .gt-btn-login,
-#gitalk-container .gt-btn-submit { background-color: var(--highlight-bg); color: var(--highlight-text); border-color: var(--form-border); }
+#gitalk-container .gt-btn-submit { background-color: var(--highlight-bg) !important; color: var(--highlight-text) !important; border-color: var(--form-border) !important; }
 #gitalk-container .gt-btn:hover,
 #gitalk-container .gt-btn:focus,
 #gitalk-container .gt-btn-login:hover,
-#gitalk-container .gt-btn-submit:hover { background-color: var(--link-hover); color: var(--pager-hover-text); border-color: var(--link-hover); }
+#gitalk-container .gt-btn-submit:hover { background-color: var(--link-hover) !important; color: var(--pager-hover-text) !important; border-color: var(--link-hover) !important; }
 #gitalk-container .gt-popup,
-#gitalk-container .gt-list { background-color: var(--bg); color: var(--text); }
+#gitalk-container .gt-list { background-color: var(--bg) !important; color: var(--text) !important; }
 
 /* GitTalk 已有评论列表 */
-#gitalk-container .gt-comments { background-color: var(--bg); color: var(--text); }
-#gitalk-container .gt-comments a { color: var(--link); }
+#gitalk-container .gt-comments { background-color: var(--bg) !important; color: var(--text) !important; }
+#gitalk-container .gt-comments a { color: var(--link) !important; }
 #gitalk-container .gt-comments a:hover,
-#gitalk-container .gt-comments a:focus { color: var(--link-hover); }
-#gitalk-container .gt-comments .gt-comment { background-color: var(--table-bg); color: var(--text); border-color: var(--table-border); }
-#gitalk-container .gt-comments .gt-comment .gt-comment-content { color: var(--text); }
-#gitalk-container .gt-comments .gt-comment .gt-comment-body { color: var(--text); }
+#gitalk-container .gt-comments a:focus { color: var(--link-hover) !important; }
+#gitalk-container .gt-comments .gt-comment { background-color: var(--table-bg) !important; color: var(--text) !important; border-color: var(--table-border) !important; }
+#gitalk-container .gt-comments .gt-comment .gt-comment-content { color: var(--text) !important; }
+#gitalk-container .gt-comments .gt-comment .gt-comment-body { color: var(--text) !important; }
 #gitalk-container .gt-comments .gt-comment pre,
-#gitalk-container .gt-comments .gt-comment code { background-color: var(--pre-bg); color: var(--text); }
-#gitalk-container .gt-comments .gt-comment blockquote { border-color: var(--table-border); color: var(--text); }
-#gitalk-container .gt-comment .gt-comment-content { background-color: var(--bg); }
-#gitalk-container .gt-comment-quote { background-color: var(--highlight-bg); border-color: var(--table-border); color: var(--text); }
-#gitalk-container .gt-comment-attachments { background-color: var(--bg); border-color: var(--table-border); }
+#gitalk-container .gt-comments .gt-comment code { background-color: var(--pre-bg) !important; color: var(--text) !important; }
+#gitalk-container .gt-comments .gt-comment blockquote { border-color: var(--table-border) !important; color: var(--text) !important; }
+#gitalk-container .gt-comment .gt-comment-content { background-color: var(--bg) !important; }
+#gitalk-container .gt-comment-quote { background-color: var(--highlight-bg) !important; border-color: var(--table-border) !important; color: var(--text) !important; }
+#gitalk-container .gt-comment-attachments { background-color: var(--bg) !important; border-color: var(--table-border) !important; }
 
 /* GitTalk 评论卡片风格（对齐 GitHub 风格） */
-#gitalk-container .gt-comment { border: 1px solid var(--table-border); border-radius: 6px; }
+#gitalk-container .gt-comment { border: 1px solid var(--table-border); border-radius: 6px; padding: 12px; }
 #gitalk-container .gt-comment:hover { border-color: var(--highlight-gc-bg); }
 #gitalk-container .gt-comment .gt-comment-content { border-top-left-radius: 6px; border-top-right-radius: 6px; }
-#gitalk-container .gt-comment .gt-comment-content .gt-comment-header { background-color: var(--highlight-gc-bg); color: var(--text); border-bottom: 1px solid var(--table-border); padding: 8px 12px; border-top-left-radius: 6px; border-top-right-radius: 6px; }
-#gitalk-container .gt-comment .gt-comment-content .gt-comment-body { background-color: var(--bg); color: var(--text); padding: 12px; }
-#gitalk-container .gt-comment .gt-comment-content .gt-comment-body a { color: var(--link); }
-#gitalk-container .gt-comment .gt-comment-content .gt-comment-body a:hover { color: var(--link-hover); }
-#gitalk-container .gt-comment .gt-comment-content .gt-comment-body .markdown-body { color: var(--text); }
-#gitalk-container .gt-comment .gt-comment-content .gt-comment-body .markdown-body a { color: var(--link); }
+#gitalk-container .gt-comment .gt-comment-content .gt-comment-header { background-color: var(--highlight-gc-bg) !important; color: var(--text) !important; border-bottom: 1px solid var(--table-border) !important; padding: 8px 12px; border-top-left-radius: 6px; border-top-right-radius: 6px; }
+#gitalk-container .gt-comment .gt-comment-content .gt-comment-body { background-color: var(--bg) !important; color: var(--text) !important; padding: 12px; }
+#gitalk-container .gt-comment .gt-comment-content .gt-comment-body a { color: var(--link) !important; }
+#gitalk-container .gt-comment .gt-comment-content .gt-comment-body a:hover { color: var(--link-hover) !important; }
+#gitalk-container .gt-comment .gt-comment-content .gt-comment-body .markdown-body { color: var(--text) !important; }
+#gitalk-container .gt-comment .gt-comment-content .gt-comment-body .markdown-body a { color: var(--link) !important; }
 #gitalk-container .gt-comment .gt-comment-content .gt-comment-body .markdown-body a:hover,
-#gitalk-container .gt-comment .gt-comment-content .gt-comment-body .markdown-body a:focus { color: var(--link-hover); }
-#gitalk-container .gt-comment .gt-comment-content .gt-comment-body .markdown-body pre { background-color: var(--pre-bg); color: var(--text); border: 1px solid var(--table-border); }
-#gitalk-container .gt-comment .gt-comment-content .gt-comment-body .markdown-body :not(pre) > code { background-color: var(--highlight-bg); color: var(--highlight-text); border: 1px solid var(--table-border); padding: 2px 4px; border-radius: 3px; }
-#gitalk-container .gt-comment .gt-comment-content .gt-comment-body .markdown-body blockquote { border-color: var(--table-border); color: var(--text); }
+#gitalk-container .gt-comment .gt-comment-content .gt-comment-body .markdown-body a:focus { color: var(--link-hover) !important; }
+#gitalk-container .gt-comment .gt-comment-content .gt-comment-body .markdown-body pre { background-color: var(--pre-bg) !important; color: var(--text) !important; border: 1px solid var(--table-border) !important; }
+#gitalk-container .gt-comment .gt-comment-content .gt-comment-body .markdown-body :not(pre) > code { background-color: var(--highlight-bg) !important; color: var(--highlight-text) !important; border: 1px solid var(--table-border) !important; padding: 2px 4px; border-radius: 3px; }
+#gitalk-container .gt-comment .gt-comment-content .gt-comment-body .markdown-body blockquote { border-color: var(--table-border) !important; color: var(--text) !important; }
 
 
 /* Post 正文代码块与行内代码（Markdown / Pygments） */
