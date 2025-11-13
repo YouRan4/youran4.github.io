@@ -24,6 +24,7 @@
   --nav-fixed-bg: rgba(255,255,255,0.9);
   --nav-fixed-border: #f2f2f2;
   --nav-fixed-brand: #404040;
+  --nav-fixed-link: #404040;
   --nav-fixed-link-hover: #0085A1;
   --highlight-bg: transparent;
   --highlight-text: inherit;
@@ -58,6 +59,7 @@
     --nav-fixed-bg: rgba(18,18,20,0.9);
     --nav-fixed-border: #2a2a2a;
     --nav-fixed-brand: #e6e6e6;
+    --nav-fixed-link: #e6e6e6;
     --nav-fixed-link-hover: #9ecbff;
     --highlight-bg: #0f0f12;
     --highlight-text: #dddddd;
@@ -92,6 +94,7 @@ html.theme-dark {
   --nav-fixed-bg: rgba(18,18,20,0.9);
   --nav-fixed-border: #2a2a2a;
   --nav-fixed-brand: #e6e6e6;
+  --nav-fixed-link: #e6e6e6;
   --nav-fixed-link-hover: #9ecbff;
   --highlight-bg: #0f0f12;
   --highlight-text: #dddddd;
@@ -125,6 +128,7 @@ html.theme-light {
   --nav-fixed-bg: rgba(255,255,255,0.9);
   --nav-fixed-border: #f2f2f2;
   --nav-fixed-brand: #404040;
+  --nav-fixed-link: #404040;
   --nav-fixed-link-hover: #0085A1;
   --highlight-bg: transparent;
   --highlight-text: inherit;
@@ -140,6 +144,7 @@ a:hover, a:focus { color: var(--link-hover); }
 .navbar-custom.is-fixed { background-color: var(--nav-fixed-bg); border-bottom: 1px solid var(--nav-fixed-border); }
 .navbar-custom.is-fixed .navbar-brand { color: var(--nav-fixed-brand); }
 .navbar-custom.is-fixed .nav li a:hover, .navbar-custom.is-fixed .nav li a:focus { color: var(--nav-fixed-link-hover); }
+.navbar-custom.is-fixed .nav li a { color: var(--nav-fixed-link); }
 .intro-header { background-color: var(--intro-bg); }
 .post-preview > a { color: var(--text); }
 .post-preview > .post-meta { color: var(--post-meta); }
