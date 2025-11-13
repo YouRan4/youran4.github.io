@@ -5,8 +5,8 @@
     <description>I like to be leisurely and carefree</description>
     <link>http://p0m1se.club//</link>
     <atom:link href="http://p0m1se.club//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 12 Nov 2025 16:17:09 +0000</pubDate>
-    <lastBuildDate>Wed, 12 Nov 2025 16:17:09 +0000</lastBuildDate>
+    <pubDate>Thu, 13 Nov 2025 09:29:00 +0000</pubDate>
+    <lastBuildDate>Thu, 13 Nov 2025 09:29:00 +0000</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -73,8 +73,8 @@
 需要事先设置好OBS的基础设置，录制参数之类的&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;#### 首先设置好保存回放的时间，注意OBS的回放缓存是在内存的。不要保存的太大，避免影响游戏体验。
- &lt;img src=&quot;/asset/images//20251112193008.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;首先设置好保存回放的时间注意obs的回放缓存是在内存的不要保存的太大避免影响游戏体验&quot;&gt;首先设置好保存回放的时间，注意OBS的回放缓存是在内存的。不要保存的太大，避免影响游戏体验。&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/asset/images//20251112193008.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;然后设置保存即时回放的快捷键&lt;img src=&quot;/asset/images/20251112194249.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
