@@ -5,8 +5,8 @@
     <description>I like to be leisurely and carefree</description>
     <link>http://p0m1se.club//</link>
     <atom:link href="http://p0m1se.club//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 18 Nov 2025 19:32:40 +0000</pubDate>
-    <lastBuildDate>Tue, 18 Nov 2025 19:32:40 +0000</lastBuildDate>
+    <pubDate>Tue, 18 Nov 2025 19:43:47 +0000</pubDate>
+    <lastBuildDate>Tue, 18 Nov 2025 19:43:47 +0000</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -129,19 +129,28 @@
 
 &lt;p&gt;安装后打开OBS-工具-OBS-Hadowplay设置。按照我的来.&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/asset/images/20251119021927.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;这里的10s意思是关闭游戏之后多久自动关闭回放缓存。&lt;/p&gt;
 
 &lt;p&gt;回到桌面10s之后将会关闭回放缓存，这样的话Windows就能进入休眠。而进入游戏之后又会自动打开回放缓存。&lt;/p&gt;
 
 &lt;p&gt;但是这个插件需要依赖游戏采集。才能识别到打开的是否是游戏。由于OBS的游戏采集与反作弊存在兼容性问题。需要自己判断对应游戏能不能正常捕获。&lt;/p&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;！！！这个插件的启动开启与关闭回放缓存只在游戏捕获以及窗口捕获模式下生效&lt;/strong&gt;
-&lt;strong&gt;！！！这个插件的启动开启与关闭回放缓存只在游戏捕获以及窗口捕获模式下生效&lt;/strong&gt;
-&lt;strong&gt;！！！这个插件的启动开启与关闭回放缓存只在游戏捕获以及窗口捕获模式下生效&lt;/strong&gt;
-如果你只想用录屏文件分类功能以及声音通知，那你只需要勾选上自动组织设置,Enable Organisation of Files into Named folders,播放通知音效 这三个选项就行,其他的都不用管。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;！！！这个插件的启动开启与关闭回放缓存只在游戏捕获以及窗口捕获模式下生效&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&quot;/asset/images/20251119021927.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;！！！这个插件的启动开启与关闭回放缓存只在游戏捕获以及窗口捕获模式下生效&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;！！！这个插件的启动开启与关闭回放缓存只在游戏捕获以及窗口捕获模式下生效&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;如果你只想用录屏文件分类功能以及声音通知，那你只需要勾选上自动组织设置,Enable Organisation of Files into Named folders,播放通知音效 这三个选项就行,其他的都不用管。&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;配置之后的效果是,开机自动后台启动OBS,打开游戏之后游戏捕获到内容,插件自动启动回放缓存,关闭游戏十秒后自动关闭回放缓存,释放资源占用,Windwos可进入休眠状态。&lt;/p&gt;
 
